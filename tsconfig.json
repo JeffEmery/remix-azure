@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2019", "DOM", "DOM.Iterable"],
+    "target": "ES2019",
+
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+
+    "declaration": true,
+    "emitDeclarationOnly": false,
+
+    "outDir": "./lib",
+    "rootDir": "./src"
+  }
+}
