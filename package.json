@@ -1,42 +1,40 @@
 {
-  "name": "remix-azure-temp",
-  "version": "0.0.2",
+  "private": true,
+  "name": "remix-azure",
   "description": "Azure Function server request handler for Remix",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib/**/*"
-  ],
+  "version": "0.0.1",
+  "license": "MIT",
+  "author": "Jeff Emery",
   "scripts": {
-    "build": "tsc",
+    "build": "rollup -c && tsc -b",
+    "publish": "echo \"Hello\"",
+    "babel": "babel src -d dist -x \".ts\" --verbose --delete-dir-on-start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JeffEmery/remix-azure.git"
+    "url": "https://github.com/JeffEmery/remix-azure.git"
   },
-  "keywords": [
-    "remix",
-    "server",
-    "adapter",
-    "azure",
-    "function"
-  ],
-  "author": "Jeff Emery",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JeffEmery/remix-azure/issues"
   },
   "homepage": "https://github.com/JeffEmery/remix-azure#readme",
-  "dependencies": {
-    "@remix-run/node": "^1.4.3",
-    "@remix-run/serve": "^1.4.3"
-  },
   "devDependencies": {
-    "@azure/functions": "^3.2.0",
-    "@types/node": "^17.0.35",
-    "@types/react": "^18.0.9",
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-proposal-export-namespace-from": "^7.17.12",
+    "@babel/plugin-proposal-optional-chaining": "^7.17.12",
+    "@babel/plugin-transform-modules-commonjs": "^7.18.2",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.17.12",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "eslint": "^8.15.0",
-    "typescript": "^4.6.4"
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.5",
+    "rollup-plugin-copy": "^3.4.0",
+    "typescript": "^4.7.2"
   }
 }

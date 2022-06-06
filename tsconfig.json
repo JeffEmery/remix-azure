@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-    "lib": ["ES2019", "DOM", "DOM.Iterable"],
+    "lib": ["ES2019", "DOM"],
     "target": "ES2019",
 
+    "module": "CommonJS",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "strict": true,
 
     "declaration": true,
-    "emitDeclarationOnly": false,
+    "emitDeclarationOnly": true,
+    // Ensure that Babel can safely transpile files in the TypeScript project
+    "isolatedModules": true,
 
     "outDir": "./lib",
     "rootDir": "./src"
