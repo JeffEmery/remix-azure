@@ -2,12 +2,11 @@
   "private": true,
   "name": "remix-azure",
   "description": "Azure Function server request handler for Remix",
-  "version": "0.0.1",
+  "version": "0.1-beta.1",
   "license": "MIT",
   "author": "Jeff Emery",
   "scripts": {
     "build": "rollup -c && tsc -b",
-    "publish": "echo \"Hello\"",
     "babel": "babel src -d dist -x \".ts\" --verbose --delete-dir-on-start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
