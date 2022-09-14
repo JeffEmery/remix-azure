@@ -1,7 +1,7 @@
 {
   "name": "remix-azure",
   "description": "Azure Function server request handler for Remix",
-  "version": "0.0.1-beta.1",
+  "version": "0.0.1-beta.2",
   "license": "MIT",
   "author": "Jeff Emery",
   "repository": {
@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/JeffEmery/remix-azure#readme",
   "dependencies": {
+    "@azure/functions": "^3.2.0",
     "@remix-run/node": "^1.7.0",
     "@remix-run/serve": "^1.7.0"
   },
   "devDependencies": {
-    "@azure/functions": "^3.2.0",
     "@types/node": "^18.7.16",
     "@types/react": "^18.0.19"
   }
